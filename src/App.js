@@ -1,22 +1,34 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
+import Login from "./page/Login";
+
+export default function App() {
+  return (
+    <Router>
       <div>
-        <Router>
-          <nav>
-            <div>Home</div>
-            <div>About</div>
-          </nav>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>{/* <Link to="/users">Users</Link> */}</li>
+          </ul>
+        </nav>
 
-          <Switch>
-            <Route></Route>
-            <Route></Route>
-          </Switch>
-        </Router>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/onboarding">{/* <Users /> */}</Route>
+          <Route path="/signup">{/* <Home /> */}</Route>
+        </Switch>
       </div>
-    );
-  }
+    </Router>
+  );
 }

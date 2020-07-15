@@ -20,22 +20,23 @@ class MainText extends Component {
 }
 
 const Containter = styled.div`
-  /* width: 375px;
+  position: relative;
+  width: 375px;
   height: 812px;
   border: solid 1px #ccc;
-  border-radius: 30px; */
-  display: flex;
+  border-radius: 30px;
+  /* display: flex;
   justify-content: column;
   align-items: center;
   text-align: center;
   position: absolute;
   top: 342.5px;
   left: 11%;
-  margin: 0 auto;
+  margin: 0 auto; */
 `;
 
 const Content = styled.div`
-  font-family: Helvetica Neue;
+  /* font-family: Helvetica Neue;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -44,7 +45,12 @@ const Content = styled.div`
   margin: auto;
   letter-spacing: -0.005em;
   flex-flow: column wrap;
-  max-width: 250px;
+  max-width: 250px; */
+  position: absolute;
+  width: 295px;
+  height: 127px;
+  left: 40px;
+  top: 342.5px;
 `;
 
 const SubContent = styled.div`

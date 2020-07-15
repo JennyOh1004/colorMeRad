@@ -9,8 +9,8 @@ class Main extends Component {
     return (
       <div>
         {/* <Splash /> */}
-        <Onboarding1 />
-        {/* <Onboarding2 /> */}
+        {/* <Onboarding1 /> */}
+        <Onboarding2 />
         {/* <MainText /> */}
       </div>
     );

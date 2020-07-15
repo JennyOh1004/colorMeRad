@@ -10,7 +10,7 @@ class Onboarding1 extends Component {
       <div>
         <Wrapper>
           <MainText />
-          <img src={bg1} alt="Background image" />
+          <img src={bg1} alt="Background image" className={bgImage} />
           <Button>
             <img src={hero} alt="Hero Arrow Icon" />
           </Button>
@@ -32,8 +32,15 @@ const Button = styled.div`
   position: absolute;
   width: 56px;
   height: 56px;
-  left: 160px;
-  top: 614px;
+  left: 159.5px;
+  top: 605px;
 `;
 
+const bgImage = styled.div`
+  position: absolute;
+  width: 659.19px;
+  height: 817.44px;
+  left: -180.92px;
+  top: -5.44px;
+`;
 export default Onboarding1;
