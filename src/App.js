@@ -5,6 +5,7 @@ import Login from "./page/Login";
 import Onboarding from "./page/Onboarding";
 import SignUp from "./page/SignUp";
 import Analysis from "./page/Analysis";
+import Camera from "./page/Camera";
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
             <li>
               <Link to="/analysis">Color Analysis</Link>
             </li>
+            <li>
+              <Link to="/camera">Camera</Link>
+            </li>
           </ul>
         </nav>
 
@@ -41,6 +45,9 @@ export default function App() {
           </Route>
           <Route path="/analysis">
             <Analysis />
+          </Route>
+          <Route path="/camera">
+            <Camera />
           </Route>
         </Switch>
       </div>
