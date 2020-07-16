@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./page/Login";
+import Onboarding from "./page/Onboarding";
+import SignUp from "./page/SignUp";
+import Analysis from "./page/Analysis";
 
 export default function App() {
   return (
@@ -15,7 +18,12 @@ export default function App() {
             <li>
               <Link to="/login">Login</Link>
             </li>
-            <li>{/* <Link to="/users">Users</Link> */}</li>
+            <li>
+              <Link to="/onboarding">Onboarding</Link>
+            </li>
+            <li>
+              <Link to="/analysis">Color Analysis</Link>
+            </li>
           </ul>
         </nav>
 
@@ -25,8 +33,15 @@ export default function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/onboarding">{/* <Users /> */}</Route>
-          <Route path="/signup">{/* <Home /> */}</Route>
+          <Route path="/onboarding">
+            <Onboarding />
+          </Route>
+          <Route path="/signup">
+            <SignUp />
+          </Route>
+          <Route path="/analysis">
+            <Analysis />
+          </Route>
         </Switch>
       </div>
     </Router>
