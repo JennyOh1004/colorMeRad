@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "storybook": "start-storybook"
   },
   "keywords": [
     "'react'"
@@ -19,6 +20,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.1.1",
+    "@emotion/core": "^10.0.28",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {
@@ -29,6 +31,17 @@
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-notes": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-preset-react-app": "^9.1.2",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-is": "^16.13.1",
+    "typescript": "^3.9.5"
   }
 }
