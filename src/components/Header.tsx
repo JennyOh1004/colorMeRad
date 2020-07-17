@@ -1,5 +1,5 @@
 import React from "react";
-// import PrevIcon from "../assets/prev-icon.png";
+import PrevIcon from "../assets/prev-icon.png";
 import Title from "./Title";
 
 /** @jsx jsx */
@@ -23,7 +23,7 @@ const Header = ({ children, onAction, actionTitle, onPrev }: HeaderProps) => {
   return (
     <Wrapper>
       <Actions className="action">
-        {/* <div>{onPrev && <img src={PrevIcon} />}</div> */}
+        <div>{onPrev && <img src={PrevIcon} />}</div>
         <div>{onAction && actionTitle}</div>
       </Actions>
       <Title size="h1">{children}</Title>
