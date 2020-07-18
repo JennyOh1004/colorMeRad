@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../Header";
 import { jsx, css } from "@emotion/core";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
-import Title from "../Title/Title";
-import { sizes } from "../Button/Button.stories";
+import Title from "../Title";
 
 export default {
   title: "components|Header",

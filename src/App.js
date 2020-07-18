@@ -7,50 +7,60 @@ import SignUp from "./page/SignUp";
 import Analysis from "./page/Analysis";
 import Camera from "./page/Camera";
 
+import styles from "./global.css";
+
+import styled from "@emotion/styled";
+const Wrapper = styled.div`
+  max-width: 600px;
+  background: blue;
+  margin: auto;
+`;
 export default function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/onboarding">Onboarding</Link>
-            </li>
-            <li>
-              <Link to="/analysis">Color Analysis</Link>
-            </li>
-            <li>
-              <Link to="/camera">Camera</Link>
-            </li>
-          </ul>
-        </nav>
+    <Wrapper>
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/onboarding">Onboarding</Link>
+              </li>
+              <li>
+                <Link to="/analysis">Color Analysis</Link>
+              </li>
+              <li>
+                <Link to="/camera">Camera</Link>
+              </li>
+            </ul>
+          </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
+          {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/onboarding">
-            <Onboarding />
-          </Route>
-          <Route path="/signup">
-            <SignUp />
-          </Route>
-          <Route path="/analysis">
-            <Analysis />
-          </Route>
-          <Route path="/camera">
-            <Camera />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/onboarding">
+              <Onboarding />
+            </Route>
+            <Route path="/signup">
+              <SignUp />
+            </Route>
+            <Route path="/analysis">
+              <Analysis />
+            </Route>
+            <Route path="/camera">
+              <Camera />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+    </Wrapper>
   );
 }
