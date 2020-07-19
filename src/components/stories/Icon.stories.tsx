@@ -21,6 +21,7 @@ const Wrapper = styled.div`
 
 const Icon = styled.div`
   margin: 30px;
+  padding: 10px;
 `;
 
 export const icon = () => {
