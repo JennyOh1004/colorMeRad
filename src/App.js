@@ -6,15 +6,27 @@ import Onboarding from "./page/Onboarding";
 import SignUp from "./page/SignUp";
 import Analysis from "./page/Analysis";
 import Camera from "./page/Camera";
+import hero from "./assets/hero.png";
 
 import styles from "./global.css";
-
 import styled from "@emotion/styled";
+
 const Wrapper = styled.div`
-  max-width: 600px;
-  background: blue;
+  max-width: 375px;
+  height: 812px;
+  background: #f2f2f2;
   margin: auto;
+  position: relative;
 `;
+
+const Hero = styled.div`
+  position: absolute;
+  width: 213px;
+  height: 252px;
+  left: 48.33px;
+  top: 310.71px;
+`;
+
 export default function App() {
   return (
     <Wrapper>
@@ -40,6 +52,9 @@ export default function App() {
             </ul>
           </nav>
 
+          <Hero>
+            <img src={hero} alt="Hero Image" />
+          </Hero>
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
