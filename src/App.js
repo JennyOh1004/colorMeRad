@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Login from "./page/Login";
-import Onboarding from "./page/Onboarding";
+import Onboarding from "./page/Onboarding1";
 import SignUp from "./page/SignUp";
 import Analysis from "./page/Analysis";
 import Camera from "./page/Camera";
