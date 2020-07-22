@@ -11,6 +11,9 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve("./dist"),
   },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
   module: {
     rules: [
       {
@@ -19,6 +22,11 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
