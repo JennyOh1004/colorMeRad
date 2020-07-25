@@ -50,10 +50,6 @@ module.exports = {
         ],
       },
     ],
-    devServer: {
-      historyApiFallback: true,
-      inline: false,
-    },
   },
   plugins: [
     new HtmlWebpackPlugin({
